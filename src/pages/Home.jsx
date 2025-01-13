@@ -5,17 +5,30 @@ import Footer from '../components/Footer';
 
 function Home() {
     return (
-        <div>
+        <div id="main">
             <Navbar />
-            <div id="bg-img">
-                <img src={require("../assets/images/home.png")} />
+
+            <div className='flex' id="header-container">
+
+                <div className="header flex">
+                    <div id='header-text'>
+                        <h4>City Bible Church</h4>
+                    
+                    </div>
+                    
+                    <div id="why-join">
+                        <h4>Why i want to join</h4>
+                    </div>
+                </div>
+
+
+            
+                <img src={require("../assets/images/home.png")} alt="bg"/>
+        
+
             </div>
 
-            <div className="header">
-                <h4>City Bible Church</h4>
-                <div></div>
-            </div>
-
+    
             <div className='containers' id="mission-statement" >
                 <div className="mission-statement">
                     <h1>Our Mission</h1>
@@ -54,6 +67,9 @@ function Home() {
                     </div>
                 </div>
             </div>
+            
+        
+        
 
             < Footer />
 

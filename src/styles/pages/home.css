@@ -1,12 +1,14 @@
 body {
     background-color: black;
 }
-#bg-img {
-    position: absolute;
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#bg-img img{
-    z-index: 0;
+#header-container img{
     object-fit: cover;
     width: 100vw;
     height: 100vh;
@@ -14,15 +16,25 @@ body {
 }   
 
 .header{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: rgba(0,0,0, 0.5);
-    
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: white;
+    position: absolute;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#header-text{
+
+}
+
+#why-join{
+    width: 100%;
+    height: 30%;
+    bottom:0;
+    background-color: #134985;
 }
 
 .containers{

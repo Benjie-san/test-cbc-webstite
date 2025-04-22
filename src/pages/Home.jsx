@@ -11,14 +11,25 @@ function Home() {
             <div className='flex' id="header-container">
 
                 <div className="header flex">
+                    
                     <div id='header-text'>
-                        <h4>City Bible Church</h4>
-                    
+                        <div id="header-content">
+                            <h1>City Bible Church</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <button id="visit-us">Visit us on Sunday</button>
+                            <div>
+                                <p>Sunday from 8:30 am - 11:00 am</p>
+                                <p>1560 Estanislao St., Lakeview Homes 1, Putatan, Muntinlupa City, Philippines</p>
+                            </div>
+                        </div>
+
+                        <div id="header-text-inv"></div>
+                        
                     </div>
                     
-                    <div id="why-join">
+                    {/* <div id="why-join">
                         <h4>Why i want to join</h4>
-                    </div>
+                    </div> */}
                 </div>
 
 
@@ -26,6 +37,27 @@ function Home() {
                 <img src={require("../assets/images/home.png")} alt="bg"/>
         
 
+            </div>
+
+            {/*IMAGE SLIDER*/}
+            <div className='containers flex' id="events"> 
+                <div className="slider-wrapper">
+                    <h1>Upcoming Events</h1>
+                    <div className="slider">
+                    
+                        <img id="event-1" src={require("../assets/images/events/event-1.png")} alt="event-1"/>
+
+                        <img id="event-2" src={require("../assets/images/events/event-2.png")} alt="event-2"/>
+
+                        <img id="event-3" src={require("../assets/images/events/event-3.png")} 
+                        alt="event-3"/>
+                    </div>
+                    <div className="slider-nav">
+                        <a href='#event-1'></a>
+                        <a href='#event-2'></a>
+                        <a href='#event-3'></a>
+                    </div>
+                </div>
             </div>
 
     
@@ -67,12 +99,10 @@ function Home() {
                     </div>
                 </div>
             </div>
+    
+        
+
             
-        
-        
-
-            < Footer />
-
 
             
         </div>

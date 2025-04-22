@@ -1,18 +1,21 @@
 #navbar{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     position: fixed;
-    padding: 20px; 
+    padding: 20px 30px; 
     top: 0;
     z-index: 100;
-    min-width: 100%;
+    min-width: 100vw;
     gap: 20%;
+    box-sizing: border-box;
+
 }
 
 .navlist {
-    width: 80%;
+    width: 50%;
+
 }
 
 .nav-list ul{
